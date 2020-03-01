@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YUJING CHEN</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% 'portfolio/icon/favicon.ico' %" type="image/x-icon">
+    <link rel="icon" href="{% 'portfolio/icon/favicon.ico' %" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'portfolio/libs/font-awesome/css/font-awesome.min.css'%}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/stylesheet/styles.css' %}">
+    <link href="{% static 'portfolio/stylesheet/bootstrap.min.css'%}" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>YUJING CHEN</h1>
+            <h2>Software Engineer</h2>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        As a future full-stack talent, I strongly interest in building up design
+                        solution to code with
+                        best practice of software development.I have proven qualified skills in related IT field. My go
+                        to stack is using modern front-end to build responsive user interface. As a developer, I am able
+                        to delivery quality and
+                        reusable code in order to provide the best outcome to the customer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Haaga-Helia University of Applied Science</h3>
+            <span class="education-date">Aug. 2018 - July 2020</span>
+            <h4>Bachelor of Software Engineering</h4>
+            <p>
+                I amd Highly motivated IT students. With various interests on different languages and
+                frameworks, I am a full-stacks developer. Currently, advancing my React skill on medical graphic desktop
+                project with
+                other Haaga-Helia students in multidisciplinary software project course in which we are using React,
+                DB2, Java spring and CI.
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Aracada University of Applied Science</h3>
+            <span class="education-date">Aug. 2016 - June 2018</span>
+            <h4>Bachelor of Materials processing</h4>
+            <ul>
+                <li>
+                    CAD 3D Modelling
+                </li>
+                <li>
+                    3D printing
+                </li>
+                <li>
+                    Bio-degradable plastics
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        {% if skill_list %}
+        <ul>
+            {% for skill in skill_list %}
+            <li>{{ skill.skill_text }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
+        {% endif %}
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 YUJING CHEN
+                    </p>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Yujingchen" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/yujing-chen-496a9b16a/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</body>
+
+</html>
