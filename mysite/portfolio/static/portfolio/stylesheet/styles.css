@@ -1,4 +1,4 @@
-*/body {
+body {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px
 }
@@ -511,7 +511,7 @@ footer {
 #projects {
 	padding: 50px 15px;
 	border-bottom: 1px solid #dcd9d9;
-	text-align: center
+	text-align: center;
 }
 
 #projects h2 {
@@ -529,35 +529,45 @@ footer {
 }
 
 .project-image {
-	float: left
+	float: left;
+	width:300px;
+	height:300px;
+}
+.project-image-details{
+	height:auto;
 }
 
 .project-info {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	transform: translateY(-50%);
-	margin-left: 300px;
-	padding: 15px
+	margin-left: 340px;
+	padding: 15px;
 }
 
 .project-info h3 {
 	font-size: 1.5em;
 	font-weight: 300;
 	color: #374054;
-	margin: 0 0 15px 0
+	margin: 0 0 15px 0;
+	text-align:center;
 }
 
 .project-info p {
 	color: #74808a;
 	margin: 0 0 15px 0;
-	font-size: 0.9em
+	font-size: 0.9em;
+	text-align:left !important;
+}
+.p-image{
+	width:inherit;
 }
 
-.no-image .project-info {
-	position: relative;
-	margin: 0;
-	padding: 30px 15px;
-	transform: none
+.project-details h3{
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #374054;
+	margin: 0 0 15px 0;
 }
 
 #more-projects {
@@ -833,3 +843,4 @@ footer {
 		padding: 5px 10px
 	}
 }
+

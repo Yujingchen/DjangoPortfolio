@@ -33,8 +33,12 @@
             <li>
                 <a href="#education">Education</a>
             </li>
+
             <li>
                 <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -46,7 +50,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>YUJING CHEN</h1>
-            <h2>Software Engineer</h2>
+            <h2>Software Developer</h2>
         </div>
         <!-- End #lead-content -->
 
@@ -65,12 +69,12 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        As a future full-stack talent, I strongly interest in building up design
-                        solution to code with
-                        best practice of software development.I have proven qualified skills in related IT field. My go
-                        to stack is using modern front-end to build responsive user interface. As a developer, I am able
-                        to delivery quality and
-                        reusable code in order to provide the best outcome to the customer.
+                        A self-motivated software developer with experience working with data visulization, UI
+                        desgin,
+                        interative interface, automation testing, Fullstack architecture during my
+                        internship
+                        in BC Platforms
+                        OY.
                     </p>
                 </div>
             </div>
@@ -84,15 +88,23 @@
             <h3>Haaga-Helia University of Applied Science</h3>
             <span class="education-date">Aug. 2018 - July 2020</span>
             <h4>Bachelor of Software Engineering</h4>
-            <p>
-                I amd Highly motivated IT students. With various interests on different languages and
-                frameworks, I am a full-stacks developer. Currently, advancing my React skill on medical graphic desktop
-                project with
-                other Haaga-Helia students in multidisciplinary software project course in which we are using React,
-                DB2, Java spring and CI.
-            </p>
+            <ul>
+                <li>
+                    Database and DBMS(SQL & MYSql)
+                </li>
+                <li>
+                    Frontend Development(React & Redux)
+                </li>
+                <li>
+                    Java programming
+                </li>
+                <li>
+                    Server programming(Java Spring)
+                </li>
+            </ul>
         </div>
         <!-- End .education-block -->
+
 
         <div class="education-block">
             <h3>Aracada University of Applied Science</h3>
@@ -113,6 +125,7 @@
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
+
 
 
     <div id="skills">
@@ -137,45 +150,102 @@
     </div>
     <!-- End #skills -->
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2020 YUJING CHEN
-                    </p>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/Yujingchen" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img class="p-image" src="{% static 'portfolio/images/project.png' %}" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Medical Dashboard</h3>
+                        <p>
+                            Dataset Visualisation Dashboard.
+                            Create a graphical landing page for a data warehouse user. Visualise relevant information
+                            with a modern and easily extendable Web stack. Implement a Continuous Integration &
+                            Deployment pipeline.Adjust the scope in monthly sprints according to the speed of
+                            development and results.
+                        </p>
 
-                        <li>
-                            <a href="https://www.linkedin.com/in/yujing-chen-496a9b16a/" target="_blank"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+                    </div>
+
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-details">
+                        <h3>Development Phases</h3>
+                    </div>
+                    <div class="project-image-details" style="width: 100%;	float: left;">
+                        <img class="p-image" src="{% static 'portfolio/images/project-details-1.png' %}" />
+                    </div>
+                    <div class="project-image-details" style="width: 100%; float: left;">
+                        <img class=" p-image" src="{% static 'portfolio/images/project-details-2.png' %}" />
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- End .project-info -->
+        </div>
+        <!-- End .project -->
+
+
+
+        <div id="contact">
+            <h2>Get in Touch</h2>
+            <div id="contact-form">
+                <form method="POST" action="https://formspree.io/email@email.com">
+                    <input type="hidden" name="_subject" value="Contact request from personal website" />
+                    <input type="email" name="_replyto" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <!-- End #contact-form -->
+        </div>
+        <!-- End #contact -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 copyright">
+                        <p>
+                            Copyright &copy; 2020 YUJING CHEN
+                        </p>
+                    </div>
+                    <div class="col-sm-5 social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/Yujingchen" target="_blank"><i class="fa fa-github"
+                                        aria-hidden="true"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/in/yujing-chen-496a9b16a/" target="_blank"><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
+        </footer>
+        <!-- End footer -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="{%static 'portfolio/js/scripts.js' %}"></script>
 </body>
 
 </html>

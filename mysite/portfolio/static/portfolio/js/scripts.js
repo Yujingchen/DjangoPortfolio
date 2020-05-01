@@ -10,9 +10,11 @@
     portfolio website.
 */
 
-(function ($) {
 
-    // Remove no-js class
+// Remove no-js class
+
+
+$(document).ready(function () {
     $('html').removeClass('no-js');
 
     // Animate to section when nav is clicked
@@ -93,5 +95,4 @@
             $('#more-projects').fadeIn(300);
         });
     });
-
-})(jQuery);
+});
